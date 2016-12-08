@@ -1,0 +1,320 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>BOOTSTARP</title>
+	
+		<meta charset="utf-8"/>		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>		
+			 
+		
+	 
+    <style type="text/css">
+		<!--.dropdown-menu {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 50px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+		}
+		.dropdown-content1 {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 50px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+		}
+		.dropdown1:hover .dropdown-content1,.dropdown:hover .dropdown-menu {
+			display: block;
+		}
+		
+		div.StranicaAD11{
+			margin-top: -30px;
+			margin-bottom: 0px;
+		    margin-left: 250px;
+			
+			
+		}	-->
+		
+		
+		
+		div.bs-example,div.divus{
+		  display:inline-block;
+		}
+		
+		div.bs-example{
+		    border: 1px solid black;
+		    margin-top:50px;
+		    margin-left:50px;
+			margin-bottom:50px
+			margin-right:50px;
+		}
+		
+		div.Slicica{
+		    border: 1px solid black;
+		    margin-top:10px;
+		    margin-left:300px;
+			margin-right:320px;
+			margin-bottom:0px;
+		}
+		
+		div.Slicica1{
+		    border: 1px solid black;
+		    margin-top:-40px;
+		    margin-left:650px;
+			margin-right:620px;
+			margin-bottom:0px;
+		}
+		
+		div.Text{
+		    border: 1px solid black;
+		    margin-top:-80px;
+		    margin-left:750px;
+			margin-right:300px;
+			margin-bottom:0px;
+		}
+		
+		
+		.dropdown-menu {
+			display: none;
+			
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 10px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+		}
+		
+		.dropdown-content1 {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 1000px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+		}
+		
+		.dropdown-content1 {
+			display: none;
+
+			background-color: #f9f9f9;
+			min-width: 1px;
+			box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+			margin-top:0px;
+		    margin-left:300px;
+			margin-right:700;
+			margin-bottom:0px;
+		}
+		
+		.dropdown1:hover .dropdown-content {
+			display: block;
+		}
+		
+		.dropdown1:hover .dropdown-content1 {
+			display: block;
+		}
+		
+
+		
+				ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+	position: fixed;
+	right: 0px;
+	left:0px;
+	
+}
+
+li {
+    float: left;
+	
+}
+.btn {
+
+	margin-top:10px;
+	margin-left:80px;
+}
+
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+		
+		
+</style>
+		
+		
+		
+		
+  
+
+
+
+</head>   
+<body>
+
+	
+	<div class="DRopMeni">	
+	<ul>
+  <li><img src="TO-NET.jpg" width="300" height="80"></li>
+  <li><div class="dropdown1">
+				<button href="#html" class="btn btn-danger">Informacije <b class="caret"></b></button>  		
+					<ul class="dropdown-content ">
+						<p id="p11"  >Hello World!</p>
+						<p id="p12" > Hello World!</p>
+						<p id="p13" > Hello World!</p>
+					</ul>
+			</div>
+			</li>
+  <li> <button id="adminButton" class="btn btn-danger" onClick="funkicjeAdmin.StranicaAdmin()" >Adminn</button></li>
+  
+</ul>
+ </div>	
+	
+	
+<div class="Micikaaa">	
+	<div class="bs-example">
+	   <div class="dropdown1">
+				<button href="#html" class="btn btn-danger">Informacije <b class="caret"></b></button>  		
+					<ul class="dropdown-content ">
+						<p id="p11"  >Hello World!</p>
+						<p id="p12" > Hello World!</p>
+						<p id="p13" > Hello World!</p>
+					</ul>
+			</div>
+	</div>
+	 &nbsp;  &nbsp;  &nbsp;  &nbsp;
+	<div class="divus">	
+			<div class="dropdown1">
+				<button href="#html" class="btn btn-danger">     Text      <b class="caret"></b></button>  		
+					<ul class="dropdown-content1 ">
+						<p id="p21"  >Hello World!</p>
+						<p id="p22" > Hello World!</p>
+						<p id="p23" > Hello World!</p>
+					</ul>
+			</div>
+	</div>
+</div>
+<div class="Slicica"> 
+				<img src="TO-NET.jpg" width="300" height="80">
+</div>
+<div class="Text">
+<p>This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</p>
+</div>
+
+<div class="Slicica1"> 
+		<button id="adminButton" class="btn btn-danger" onClick="funkicjeAdmin.StranicaAdmin()" >Adminn</button>		
+</div>
+<div class="Slicica12"> 
+				<img src="TO-NET.jpg" width="300" height="300">
+</div>
+
+<div class="Slicica123"> 
+				<img src="TO-NET.jpg" width="300" height="300">
+</div>
+<div class="Text">
+<p>Miroslav Beronja</p>
+</div>
+<div class="Text">
+<p>Jasna Beronja</p>
+</div>
+<div class="Text">
+<p>Setfan Beronja</p>
+</div>
+<div class="Text">
+<p>Mikajloo Beronja</p>
+</div>
+
+<!-- <div class="StranicaAD12" id="StranicaAD12"> 
+	<div class="dropdown">
+	  <button class="btn btn-danger btn-lg" type="button" id="dropdownMenuButton"> Dropdown button</button>
+	  <div class="dropdown-menu">
+		<p id="p31" > Hello World!</p>
+		<p id="p31" > Hello World!</p>
+		<p id="p31" > Hello World!</p>
+	  </div>
+</div>
+<div class="StranicaAD11" id="StranicaAD11">
+	<div class="dropdown1">
+		<button class="btn btn-danger btn-lg">Informacije</button>
+		<div class="dropdown-content1">
+			<p id="p21" > Hello World!</p>
+			<p id="p22" > Hello World!</p>
+			<p id="p23" > Hello World!</p>
+			<p id="nemaAD" onClick="funkicjeAdmin.StranicaAdmin()">Admin</p>
+		</div> 
+	</div>
+</div>-->
+
+  
+
+
+   
+	
+	<!-- <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 col-sm-4 col-xs-4" style="background-color:white;">
+				<button id="reg1" class="col-md-12 col-sm-12 col-xs-12" "background-color:green;">Registracija1</button>
+					<div class="row">
+					<button id="reg2" class="col-md-4" "background-color:green;">Registracija2</button>
+						
+					</div>
+					<div class="row1">
+						<button id="reg3" class="col-md-4" "background-color:green;">Registracija3</button>
+					</div>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-4" style="background-color:gray;">
+					Cile
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-4" style="background-color:green;">
+					Jaca
+			</div>
+		</div>	
+	</div>-->
+        
+	   
+	
+	
+		
+	
+		
+<script>
+   
+</script>
+
+
+
+</body>
+</html>
