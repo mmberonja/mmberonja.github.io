@@ -93,6 +93,7 @@ var mickoMajnun = 0;
 var valuesGodina = "";
 var monthGodina = 0; 
 var UlziNe = 0;
+var flgTrenutna_nedelja = 0,brojacTrenutna_nedelja = 0;
 
 var funkicjeMicko = {
 	gotoFunction: function(Function) {
@@ -120,31 +121,6 @@ var funkicjeMicko = {
 		$("#id7").hide();
 		$("#id8").hide();
 		
-	},
-
-	SL : function() {
-		
-		window.location.href="#/login";
-		$("#id3").hide();
-		$("#id4").show();
-		$("#id5").hide();
-		$("#id6").hide();
-		$("#id7").hide();
-		$("#id8").hide();
-
-	},
-
-
-	Ad: function(){
-		
-		window.location.href="#/Admin";
-		$("#id6").show();
-		$("#id5").hide();
-		$("#id4").hide();
-		$("#id3").hide();
-		$("#id7").hide();	
- 
-
 	},
 	
 	Registracija : function() {
@@ -565,7 +541,10 @@ var funkicjeMicko = {
 	
 	Meseci_Nedelje :  function(){
 		  
-		
+		/*flgTrenutna_nedelja = 0;
+		alert(flgTrenutna_nedelja);
+		alert("Micko");*/
+
 		for(var i1 = 0; i1 < monthNames.length ; i1++){
 
 			options1 += '<option value="'+monthNames[i1]+'" />';
@@ -576,14 +555,15 @@ var funkicjeMicko = {
 		}
 		 
 			for(var i5 = 0; i5 < inputs.length; i5++){
+				
 				$("#ListaMeseca").on('input',function(e){
 		          
-					
+					//alert("Mickos");
 					options = '';
 					    var optionFound = false,
 							datalist = this.list;
 							for (var j = 0; j < datalist.options.length; j++) {
-								
+								//alert("Mickos");
 								if (this.value == datalist.options[j].value) {
 									optionFound = true;
 									break;
@@ -601,8 +581,29 @@ var funkicjeMicko = {
 									var flgMeseci1 = 1;
 									$("#Mesec").val(flgMeseci1);
 									$('#Upis-u-bazu-vide-upisa').attr("disabled", false);
+									brojacTrenutna_nedelja++;
+									
+									if(brojacTrenutna_nedelja <= 1)
+									{
+										flgTrenutna_nedelja = 0;
+										
+									}
+									
 									funkicjeCile.Izvestaj1();
-									funkicjeMicko.Trenutna_nedelja();
+									if(flgTrenutna_nedelja == 0)
+									{
+										flgTrenutna_nedelja = 1;
+										
+										funkicjeMicko.Trenutna_nedelja();
+									}
+									if(brojacTrenutna_nedelja == 11)
+									{	
+										brojacTrenutna_nedelja = 0;
+									}
+
+
+									//alert("Funkcija--Meseci_Nedelje");
+									
 								    flgMeseciTr = 1;
 									if(flgNedTr == 1 && flgMeseciTr == 1)
 									{
@@ -621,7 +622,7 @@ var funkicjeMicko = {
 									
 							}
 							
-							
+						//funkicjeMicko.Trenutna_nedelja();	
 						
                          
 						if(values == 'Januar'){month = 0;}
@@ -664,6 +665,8 @@ var funkicjeMicko = {
 						}	
 				});	
 	    }
+		
+		
 		
 	},
 	
@@ -816,6 +819,7 @@ var funkicjeMicko = {
 					    
 					    funkicjeCile.RefresMeseci();
 						funkicjeCile.Izvestaj1();
+						alert("UpisStanja")
 						funkicjeMicko.Trenutna_nedelja();
 						//$("#ListaPr").val("");
 						
@@ -949,6 +953,8 @@ var funkicjeMicko = {
 	
 	Trenutna_nedelja: function(){
 		
+			//alert("Cile");
+			//brojacTrenutna_nedelja = 0;
 		    idUvecaj = 0;
 			idUvecajInput = 0;
 			brojanje = 0;
@@ -1208,6 +1214,8 @@ var funkicjeMicko = {
 		$("#id6").hide();
 		$("#id7").hide();
 		$("#id8").show();
+
+			funkicjeCile.RefresMeseci();
 
 	},
 	

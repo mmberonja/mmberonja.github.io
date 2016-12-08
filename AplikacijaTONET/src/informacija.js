@@ -53,6 +53,12 @@ var funkicjeCile = {
 	},
 	Informacije_Meseci_Nedelje : function() {
 		
+
+
+
+
+
+		
 		for(var i1 = 0; i1 < monthNames_inf.length ; i1++){
 
 			options1_inf += '<option value="'+monthNames_inf[i1]+'" />';

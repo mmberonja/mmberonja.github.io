@@ -13,6 +13,8 @@ var flegDD2 = 0;
 var Sviprojekti = "0";
 var deatkivacijaKorisnik = "";
 var atkivacijaKorisnik = "";
+var godinaInf11Admin = 0;
+
 //var web = 'http://localhost:3090';
 
 var funkicjeAdmin = {
@@ -103,6 +105,8 @@ var funkicjeAdmin = {
 				            funkicjeAdmin.Svi_projekti();
 							funkicjeAdmin.SamoAktivni();
 							funkicjeAdmin.SamoNeAktivni();
+							funkicjeAdmin.TabelaKorisniciAdmin();
+							funkicjeAdmin.TabelaProjekat_korisnici();
 			},
 			
             error: function(response) {
@@ -166,6 +170,8 @@ var funkicjeAdmin = {
 		
 		    $("tr#trTabela").remove();
 				
+			//alert(godinaInf11);
+
 			$.ajax({
 
 				url: ''+web+'/Spojeno-u-nadimak?ime='+KorisnikAdmin+'&godina='+godinaInf11+'',
@@ -687,8 +693,8 @@ var funkicjeAdmin = {
 		$("#id5").hide();
 		$("#id6").hide();
 		$("#id3").hide();
-		
-		funkicjeAdmin.PopunjavanjeProjekata();
+		//alert("Micko");
+		//funkicjeAdmin.PopunjavanjeProjekata();
 		funkicjeCile.RefresMeseci();
 		funkicjeMicko.Trenutna_nedelja();
 		
@@ -697,7 +703,7 @@ var funkicjeAdmin = {
 	PopunjavanjeProjekata: function (){
 		
 		var Popunjavanje = spojeno_ime_prezime;
-		
+		alert("usaooo");
 		$.ajax({
 			
 			url: ''+web+'/Lista-projekata-na-kojim-korisnik-radi?ime='+Popunjavanje+'',
@@ -725,8 +731,8 @@ var funkicjeAdmin = {
 						{
 							optionsADmin += '<option value="'+nizListADmin[i2]+'" />';
 						}
-			
-							document.getElementById('anrede').innerHTML =  optionsADmin;	
+						//alert("usaooo");
+						//	document.getElementById('anrede').innerHTML = optionsADmin;	
 							
 			},
 			
@@ -1322,6 +1328,7 @@ $("#OdabranaGodina1").on('input',function(e){
 	
 			var values = $(this).val();
 			godinaInf11 = values;
+			godinaInf11Admin = values;
 			funkicjeAdmin.TabelaKorisniciAdmin();
 			//Godina = values;
 			//year = Godina;
