@@ -1,0 +1,1126 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	
+        
+		
+		<meta charset="utf-8"/>		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+		 
+        <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		   
+		   <style type="text/css">
+         <!--.ui-widget-header,.ui-state-default, ui-button{
+            background:#b9cd6d;
+            border: 1px solid #b9cd6d;
+            color: #FFFFFF;
+            font-weight: bold;
+         }-->
+       
+		 
+		div.table_on_the_left, div.table_on_the_right,div.table_on_the_right1 {
+		display:inline-block;
+		}
+		div.Projekat2, div.Projekat22,div.Projekat222 {
+		display:inline-block;
+		}
+		div.Strana11, div.Strana22, div.Strana25,div.Strana26,div.Strana27 {
+		display:inline-block;
+		}
+		div.vrednosti1, div.vrednosti2,div.vrednosti3,div.vrednosti4 {
+		display:inline-block;
+		}
+		div.Klik1 {
+		display:inline-block;
+		}
+		div.Textbox1,div.Textbox2,div.Textbox3 {
+		display:inline-block;
+		}
+		div.rezultatu,div.mesecnisati {
+		display:inline-block;
+		}
+		div.Admintable,div.vrednosti1 {
+		display:inline-block;
+		}
+		div.admin3,div.admin4,div.InputAdmin {
+		display:inline-block;
+		}
+		div.InputAdmin1,div.InputAdmin2,div.InputAdmin3 {
+		display:inline-block;
+		}
+		div.NoviProjekat2,div.NoviProjekat3{
+		display:inline-block;
+		}
+		div.BrisanjeProjekat4,div.BrisanjeProjekat5,div.BrisanjeProjekat3{
+		display:inline-block;
+		}
+		div.BrisanjeProjekat12,div.BrisanjeProjekat13{
+		display:inline-block;
+		}
+		div.Admintable,div.Strana111{
+		    display:inline-block;
+		}
+		div.AdmintableKor,div.Strana112{
+		    display:inline-block;
+		}
+		div.DeaktivacijaProjekat13,div.Deaktivacija{
+		    display:inline-block;
+		}
+		div.AktivacijaProjekat13,div.Aktivacija{
+			display:inline-block;
+		}
+		
+		.center {
+				margin: auto;
+				width: 50%;
+			
+			}
+			
+		.centerP {
+				margin: auto;
+				width: %;
+			
+			}	
+		
+		
+		.registracijaHTML {
+				margin: auto;
+				width: 75%;
+			
+			}
+		.Admin  {
+				margin: auto;
+				width: 80%;
+		}		
+				
+		
+		
+		div.Pozicija2{
+			
+			margin-top: 100px;
+			margin-right: 150px;
+		    margin-left: 150px;
+		}
+		div.Textbox44{
+			margin-top: 25px;
+			margin-right: 150px;
+		    margin-left: 150px;
+		}
+		div.Pozicija3{
+			
+			
+		}
+		
+		div.Slicica{
+		    margin-top: 10px;
+			margin-right: 1200px;
+		    margin-left: 0px;
+		}
+		
+		div.StranicaAD1{
+		    
+		    position: fixed;
+			margin-top: 30px;
+			margin-bottom: 5px;
+		    margin-left: 1200px;
+			margin-right: 50px;
+			
+		}
+		<!-- Kada su bili dropdown-ovi onda je ova situacija
+		div.StranicaAD1{
+			margin-top: 9px;
+			margin-bottom: 5px;
+		    margin-left: 600px;
+			margin-right: 400px;
+			
+		}
+		-->
+        table
+		{
+			table-layout: fixed;
+			width: 400px;
+		}
+		tableSama
+		{
+			table-layout: fixed;
+			width: 400px;
+		}
+		
+		div.StranicaAD12{
+			margin-top: -39px;
+			margin-bottom: 5px;
+		    margin-left: 420px;
+			margin-right: 200px;
+			
+		}	
+
+		div.PozicijaA1{
+		
+		   
+			margin-top: 100px;
+			margin-bottom: 0px;
+		    margin-left: 0px;
+			margin-right: 0px;
+		
+		}
+		
+		.dropdown-content1 {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+		}
+		.dropdown1:hover .dropdown-content1 {
+			display: block;
+		}
+		.dropdown12:hover  {
+			display: block;
+		}	
+		
+		
+		#trenutnaNedelja td 
+		{
+			text-align:center; 
+			vertical-align:middle;
+		}
+		
+		#trenutnaNedelja th 
+		{
+			text-align:center; 
+			vertical-align:middle;
+		}
+		
+		#presidents td 
+		{
+			text-align:center; 
+			vertical-align:middle;
+		}
+		#adminTable td 
+		{
+			text-align:center; 
+			vertical-align:middle;
+		}
+		#adminTable th 
+		{
+			text-align:center; 
+			vertical-align:middle;
+		}	
+		#presidents th 
+		{
+			text-align:center; 
+			vertical-align:middle;
+		}	
+		#adminTableKor td 
+		{
+			text-align:center; 
+			vertical-align:middle;
+		}	
+		#adminTableKor th 
+		{
+			text-align:center; 
+			vertical-align:middle;
+		}	
+		
+		
+		.ul1 {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: white;
+			position: fixed;
+			right: 0px;
+			left:0px;
+			top:0px
+		}
+
+		.li1,li2 {
+			float: left;
+			
+		}
+		.Nazad {
+
+			margin-top:30px;
+			margin-left:868px;
+		}
+
+
+		.li1,li2 {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		.li1,li2 {
+			background-color: white;
+		}
+		
+		.head {
+		    
+			margin-top:50px;
+		
+		}
+        .ul2 {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: black;
+			right: 0px;
+			left: 0px;
+			top:20px;
+			height:60px;
+		}
+
+		.a4 {
+			float: left;
+		}
+
+		.a4 {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			height:50px;
+			width:100%;
+		}
+
+		.a4 {
+			background-color: black;
+		}
+
+		.a4 {
+		    display: inline-block;
+		}
+		
+		.ul3,ulSifra,ulSifra1{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+			height:50px;
+			
+		}
+
+		.a5,a6 {
+			float: left;
+		}
+
+		.a5,a6 {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			height:50px;
+			width:100%;
+		}
+
+		.a5,a6 {
+			background-color: black;
+		}
+        
+		.a5,a6 {
+			display: inline-block;
+		}
+		
+		#footerIznad {
+		height: 100%;   
+		position: relative;    
+	}
+	/*Head da bude na dnu stranice*/
+    
+	
+	div.KlikNedeljeTrenutne{
+	    
+		margin-top: 5px;
+		margin-right: 150px;
+		margin-left: 150px;
+	
+	}
+	div.Pozicija4{
+	       
+			margin-top: 50px;
+			margin-right: 150px;
+		    margin-left: 150px;
+	}
+	div.StranaTebela{
+	
+	    margin-top: 150px;
+		margin-left: 150px;
+	}
+	
+	
+	div.Pozicija5{
+	       
+			margin-top: 15px;
+			margin-right: 900px;
+		    margin-left: 150px;
+	}
+	/*Da bi header uvek bio u podnoziju*/
+	html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}	
+	#id4 {
+			min-height:100%;
+			position:relative;
+		}
+		
+		
+	#body1 {
+		padding:10px;
+		padding-bottom:60px;   /* Height of the footer */
+	}
+	#footer1 {
+		position:absolute;
+		bottom:0;
+		width:100%;
+		height:60px;   /* Height of the footer */
+		background:black;
+	}
+	
+	
+		
+		
+	
+	.ui-dialog > .ui-widget-header {background: red;}
+
+	.ui-dialog .ui-dialog-buttonpane button.ui-button {
+		border: 1px solid black;
+		color: #FF0000;
+	}
+	
+    .ulPocetna 
+	{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: white;
+			position: fixed;
+			right: 0px;
+			left:0px;
+			top:0px
+	}
+
+		.liPocetna,liPocetna1,liPocetna2 {
+			float: left;
+			
+		}
+		.Nazad1 {
+             border: 1px solid black;
+			margin-top:-57px;
+			margin-left:300px;
+		}
+        
+		.Nazad2 {
+
+			margin-top:30px;
+			margin-left:50px;
+		}
+		
+
+		.liPocetna,liPocetna1,liPocetna2 {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		.liPocetna,liPocetna1,liPocetna2 {
+			background-color: white;
+		}
+		/* Strana sifra */
+		#id7 {
+			min-height:100%;
+			position:relative;
+		}
+		#body2 {
+			padding:10px;
+			padding-bottom:60px;   /* Height of the footer */
+		}
+		#footer2 {
+			position:absolute;
+			bottom:0;
+			width:100%;
+			height:60px;   /* Height of the footer */
+			background:black;
+		}
+		#id8 {
+			min-height:100%;
+			position:relative;
+		}
+		#body3 {
+			padding:10px;
+			padding-bottom:60px;   /* Height of the footer */
+		}
+		#footer3 {
+			position:absolute;
+			bottom:0;
+			width:100%;
+			height:60px;   /* Height of the footer */
+			background:black;
+		}
+		.ulPocetnaSifra {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: white;
+			position: fixed;
+			right: 0px;
+			left:0px;
+			top:0px
+		}
+		.ulPocetnaSifra1 {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: white;
+			position: fixed;
+			right: 0px;
+			left:0px;
+			top:0px
+		}
+          
+		.liPocetnaSifra {
+			float: left;
+			
+		}
+
+		.liPocetnaSifra {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		.liPocetnaSifra {
+			background-color: white;
+		}
+		.liPocetnaSifra1 {
+			float: left;
+			
+		}
+
+		.liPocetnaSifra1 {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		.liPocetnaSifra1 {
+			background-color: white;
+		}
+		div.Pomeraj{
+		   
+		    margin-top:157px;
+			margin-left:150px;
+		
+		}
+		div.Pomeraj1{
+		   
+		    margin-top:20px;
+			margin-left:150px;
+		
+		}
+		#nemaAD,#nemaAD1,#TableVelika{
+			color: gray;
+		}
+		.a10 {
+			float: left;
+		}
+
+		.a10 {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			height:50px;
+			width:100%;
+		}
+
+		.a10 {
+			background-color: black;
+		}
+        
+		.a10 {
+			display: inline-block;
+		}
+		
+		hr{
+			border: 1px solid #ccc;
+		}
+		
+		.some{
+			width:1100px;
+		}
+		
+		#sep{
+		     width:85px;
+		}
+		#dec{
+		    text-align: center;
+			width:85px;
+		}
+		#nov{
+		    text-align: center;
+			width:85px;
+		}
+		
+		#sep1{
+		     width:85px;
+		}
+		#dec1{
+		    text-align: center;
+			width:85px;
+		}
+		#nov1{
+		    text-align: center;
+			width:85px;
+		}
+		#sep2{
+		     width:85px;
+		}
+		#dec2{
+		    text-align: center;
+			width:85px;
+		}
+		#nov2{
+		    text-align: center;
+			width:85px;
+		}
+		#kor1{
+			text-align: center;
+			width:75px;
+		}
+		
+      </style>
+</head>
+
+<body>
+
+<div id="id3" class="id3">
+
+	<div class="container center">
+	    <div class="row">
+			<h2 class="col-md-12 col-sm-8 col-xs-12">TO-NET</h2>
+				<div class="col-md-12 col-sm-8 col-xs-12">
+					
+						<table class="table table-bordered col-md-12 col-sm-8 col-xs-12">
+							<tr>
+								<th>Korisničko ime:</th>
+								<th>Šifra:</th>
+							</tr>
+							<tr>
+								<th><input  class="col-md-12 col-sm-8 col-xs-12" type="text" id="name"  name="fullname"><br></th>
+								<th><input onkeydown="keyCode(event)" class="col-md-12 col-sm-8 col-xs-12" type="password" id="email" name="email"></th>
+							</tr>
+						</table>
+						<div class="reg1">
+						<button id="prijava-button" class="col-md-12 col-sm-8 col-xs-12 btn btn-danger" onClick="funkicjeMicko.Prijava()"  > Prijava <br></button>
+						</div>
+						<div class="reg3">
+						<p> .</p>
+						</div>
+						<div class="reg2">
+						<button  class="col-md-12 col-sm-8 col-xs-12 btn btn-danger" onClick="funkicjeMicko.Registracija()" > Registracija <br></button>
+						</div>
+				        <div id="dialog-3" title="Dialog Title goes here...">Pokusajte Ponovo</div>
+						<div id="dialog-7" title="Dialog Title goes here...">Bravo</div>
+						
+				</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div id="id4" class="containerMicko">
+	<div class="Strana2">
+			
+		    <div class="DRopMeniPocetna">	
+			<ul class="ulPocetna">
+				<li class="liPocetna" onClick="funkicjeAdmin.TONET()" ><img src="TO-NET.jpg"  width="300" height="80"></li>
+			</ul>
+			</div>
+			<div class="StranicaAD1" id="StranicaAD1"> 
+				<div class="dropdown1">
+					<button class="btn btn-danger">Informacije</button>
+						<div class="dropdown-content1">
+							<!--<p id="p21" > Hello World!</p>-->
+							<p id="p22" > Hello World!</p>
+							<p id="p23" > Hello World!</p>
+							<p><a href="#/Admin" id="nemaAD"  onClick="funkicjeAdmin.StranicaAdmin()">Admin</a></p>
+							<p><a href="#/Sifra" id="nemaAD1"  onClick="funkicjeAdmin.PromeniSifru()">Promeni lozinku</a></p>
+							<p><a href="#/Tabela" id="TableVelika"  onClick="funkicjeMicko.TabelaVelika()">Tabela</a></p>
+						</div> 
+				</div>
+		    </div>
+            <!--<div class="StranicaAD12" id="StranicaAD12"> 
+				<div class="dropdown12">
+					<button id="adminButton" class="btn btn-danger" onClick="funkicjeAdmin.PromeniSifru()" >Promeni Lozinku</button>		 
+				</div>
+			</div> 	-->	
+			<br>
+			<div class="Pozicija2">
+			    <div class="Strana11">
+				    <p>Godina:</p>
+					<td><input placeholder="Godina" id="OdabranaGodina" type="number" min="2016" max="2018" step="1" size="12"></input>
+				</div>
+				&nbsp;  
+				<!--<div class="Strana22">
+					<p>Projekat:</p>
+					<input name="ListaPr" id="ListaPr" list="anrede" placeholder="Select Type" required>
+					<datalist id="anrede" size="3">
+					</datalist> 
+				</div>-->
+				 &nbsp;  &nbsp;
+				<div class="Strana25">
+						<p>Mesec:</p>
+						<input name="ListaMeseca" id="ListaMeseca" list="mesec" placeholder="Select Type"/>
+							<datalist id="mesec">
+							</datalist> 
+				</div>
+				 &nbsp;  &nbsp;
+				<div class="Strana26">
+						<p>Nedelja: </p>
+						<input name="ListaNedelja" id="ListaNedelja" list="nedelja" placeholder="Select Type" autocomplete="off" />
+							<datalist id="nedelja">
+							</datalist> 
+				</div>
+				 &nbsp;  &nbsp;
+				<!-- <div class="Strana27">
+					<p>Vreme:</p>
+					<td><input id="OdabraniSati" type="number" min="0" max="25" step="1" size="12"></input>
+				</div>
+                 &nbsp;  &nbsp;				
+				<div class="Klik1">
+					<button id="UpisUBazu" class="btn btn-danger" onClick="funkicjeMicko.Upis_Stanja()"> Dodaj </button>
+				</div> -->
+			</div>
+			<!--<div class="Textbox44">
+					<p>Nedeljnii izveštaj: <input type="text" id="rezultati44" value="" disabled></p>
+			</div>	-->
+				
+			<br>
+		<div class="Pozicija5">	
+			<div class="Tabela-nedelje-trenutno">	
+				<body>
+					<div id="nedelje-trenutno">
+						<table width="150" class="table table-bordered" border="1" id="trenutnaNedelja">
+						<tr>
+							<th>Naziv</th><th style="width:29%" >Satnica</th>
+						</table>
+					</div>
+				</body>
+				
+				<br>
+			</div>
+		</div>
+		<div class="KlikNedeljeTrenutne">
+			<button id="Upis-u-bazu-vide-upisa" class="btn btn-danger" onClick="funkicjeMicko.KlikNedeljeTrenutne()"> Sačuvaj </button>
+			<button id="Upis-u-bazu-vide-upisa1" class="btn btn-danger" onClick="funkicjeMicko.PrijavaNedelje()"> Pogledaj </button>
+		</div>
+		<br>
+		
+		<!--<div class="Pozicija4">	
+			<div class="TabelaKorsnici">	
+				<body>
+					<div id="output">
+						<table width="120" class="table table-bordered" border="1" id="presidents">
+						<tr>
+							<th>Projekat</th><th>Januar</th><th>Februar</th><th>Mart</th><th>April</th><th>Maj</th><th>Jun</th><th>Jul</th><th>Avgust</th><th>Septembar</th><th>Oktobar</th><th>Novembar</th><th>Decembar</th>
+						</tr>
+						</table>
+					</div>
+				</body>
+				
+				<br>
+			</div>
+		</div>-->
+		<!-- <button id="IdiNaDiv3" onClick="funkicjeCile.RefresMeseci()" > Refresuj Listu </button> -->
+		<div id="dialog-10" title="Dialog Title goes here...">Pokusajte Ponovo</div>
+		<div id="dialog-12" title="Dialog Title goes here...">Bravo</div>
+		<!-- <div id="dialog" title="Dialog Title goes here...">Bravo</div>-->
+		<div id="dialog-aktivan" title="Dialog Title goes here...">Nije moguca prijava</div>
+		
+    </div>
+	<div class="body" id="body1">
+		<p></p>
+	</div>
+	<div class="footer" id="footer1">
+		<ul class="ul3">
+				<li class="a5">TO-NET d.o.o  Sentandrejski put 44 Novi Sad
+				<br>tel: +381 21 479 41 44   fax: +381 21 479 41 45<br>
+				</li>
+		</ul>
+	</div>
+	
+</div>
+
+<div id="id6">
+<br>
+<br>
+<div class="container Admin">
+ 	<div class="Admin12432">
+	    <!--<div class="Slicica1"> 
+				<img src="TO-NET.jpg" width="300" height="80">
+			</div>
+	
+		<div class="VratiNaPocetnu">
+			<button  class="btn btn-danger" onClick="funkicjeAdmin.VratiSE()" > Nazad </button>
+		</div>-->
+		<div class="DRopMeni">	
+			<ul class="ul1">
+				<li class="li1" onClick="funkicjeAdmin.TONET()" ><img src="TO-NET.jpg" id="slikeee" width="300" height="80"></li>
+				<li class="li2" ><button id="dasds" class="Nazad btn btn-danger" onClick="funkicjeAdmin.VratiSE()" >Nazad</button></li>
+			</ul>
+		</div>	
+		
+		
+		<div class="PozicijaA1">
+			<div class="Admintable">
+				<p>Lista korisnika: </p>
+				<input name="ListaKorisnika" id="ListaKorisnika" list="admin1" placeholder="Select Type"/>
+					<datalist id="admin1">
+					</datalist> 
+			</div>
+			 &nbsp;  &nbsp;
+			<div class="Strana111">
+				    <p>Godina:</p>
+					<td><input placeholder="Godina" id="OdabranaGodina1" type="number" min="2016" max="2018" step="1" size="12"></input>
+			</div>
+			<!--<div class="vrednosti1">
+				<p>Odabrani korisnik: <input type="text" id="KorisnikId" value="" size="17" disabled></p>
+			</div>-->
+			<br>
+			<br>
+			<div class="Admin1">
+				<body>
+					<div class="Admin12" id="output1" >
+						<table id="adminTable" class="table table-bordered">
+							<tr>
+								<th>Projekti</th><th>Januar</th><th>Februar</th><th>Mart</th><th>April</th><th>Maj</th><th>Jun</th><th>Jul</th><th>Avgust</th><th id="sep1" >Septembar</th><th>Oktobar</th><th id="nov1">Novembar</th><th id="dec1" >Decembar</th><th>Sum</th>
+							</tr>
+						</table>
+					</div>
+				</body>	
+			</div>
+		</div>
+		
+        <div class="Projekti-korisnk">
+			<div class="AdmintableKor">
+				<p>Projekat:</p>
+				 <input name="ListaProjekataAd" id="ListaProjekataAd" list="adminKor" placeholder="Select Type"/>
+					<datalist id="adminKor" >
+					</datalist> 
+			</div>
+			 &nbsp;  &nbsp;
+			<div class="Strana112">
+				    <p>Godina:</p>
+					<td><input placeholder="Godina" id="OdabranaGodina2" type="number" min="2016" max="2018" step="1" size="12"></input>
+			</div>
+			<br>
+			<br>
+			<div class="AdminKorsnik">
+				<body>
+					<div class="AdminKorsnik1" id="prikazAdKor" >
+						<table id="adminTableKor" class="table table-bordered">
+						    
+							<tr>
+								<th>Korisnik</th><th>Januar</th><th>Februar</th><th>Mart</th><th>April</th><th>Maj</th><th>Jun</th><th>Jul</th><th>Avgust</th><th id="sep2">Septembar</th><th>Oktobar</th><th id="nov2">Novembar</th><th id="dec2" >Decembar</th><th>Sum</th>
+							</tr>
+						</table>
+					</div>
+				</body>	
+			</div>
+		</div>
+        	
+	</div>
+	<br>
+	<hr color="black">
+	<div class="DodavanjeNovogProjekta">
+	    <div class="NoviProjekat1">
+			<h3>Dodavanje novog projekta</h3>
+		</div>
+		
+		<div class="NoviProjekat2">
+			<p> Projekat: <input type="text" id="ProjekatNovi" value="" size="10"></p>
+		</div>
+		<div class="NoviProjekat3">
+			<button id="novi-projekat" class="btn btn-danger" onClick="funkicjeAdmin.DodajProjekatNovi_dialog()"> Snimi projekat </button>
+		</div>
+		<br>
+	</div>
+	<hr color="black">
+	<div class="PozicijaA2">
+		<div class="Admin2">
+			<h3>Dodavanje korisnika na projekat</h3>
+		</div>
+		<div class="ADminUpisProjekata">
+			<div class="admin4">
+				<p>Korisnik: </p>
+				<input name="KorsnikNEP" id="KorsnikNEP" list="admin4" placeholder="Select Type"/>
+					<datalist id="admin4">
+					</datalist> 
+			</div>
+			 &nbsp;  &nbsp;
+			<div class="admin3">
+				<p>Projekat: </p>
+				<input name="NeRadi" id="NeRadi" list="admin3" placeholder="Select Type"/>
+					<datalist id="admin3">
+					</datalist> 
+			</div>
+		<!--</div> -->	
+		 &nbsp;  &nbsp;
+		<div class="InputAdmin">
+			<div class="InputAdmin3">
+				<button id="DodajProjekatID" class="btn btn-danger" onClick="funkicjeAdmin.DodajProjekat_dialog()"> Dodaj </button>
+			</div>
+		</div>
+		</div>
+	</div>
+	<hr color="black">
+	<div class="Brisanje-Korisnik-odredjeni-projekat">
+	    <div class="BrisanjeProjekat1">
+			<h3>Uklanjanje korisnika sa projekta</h3>
+		</div>
+		<!-- <div class="BrisanjeProjekat2">
+			<p>Dodavanje novog projekta: <input type="text" id="BrisanjeProjekati" value="" size="10"></p>
+		</div> -->
+		<div class="BrisanjeProjekat4">
+			<p>Korisnik: </p>
+			<input name="BrisanjeKorisnik" id="BrisanjeKorisnik" list="brisanje1" placeholder="Select Type"/>
+				<datalist id="brisanje1">
+				</datalist> 
+		</div>
+		 &nbsp;  &nbsp;
+		<div class="BrisanjeProjekat5">
+			<p>Projekat: </p>
+			<input name="Radi" id="Radi" list="brisanje2" placeholder="Select Type"/>
+				<datalist id="brisanje2">
+				</datalist> 
+		</div>
+		 &nbsp;  &nbsp;
+		<div class="BrisanjeProjekat3">
+			<button class="btn btn-danger" id="BRISII" onClick="funkicjeAdmin.UklanjanjeKorisnikaSaDatogProjekta_dialog()"> Ukloni </button>
+		</div>
+		<br>
+	</div>
+	<hr color="black">
+	<div class="Brisanje-Korisnik-svi-projekti">
+		<div class="BrisanjeProjekat11">
+			<h3>Uklanjanje korisnika</h3>
+		</div>
+		<div class="BrisanjeProjekat12">
+		<p>Korisnik: <input name="BrisanjeKorisnik1" id="BrisanjeKorisnik1" list="brisanje12" placeholder="Select Type"/></p>
+				<datalist id="brisanje12">
+				</datalist>
+		</div>
+		<div class="BrisanjeProjekat13">
+			<button class="btn btn-danger" id="BRISIKORisnika" onClick="funkicjeAdmin.BrisanjeKorisnika_dialog()"> Ukloni </button>
+		</div>	
+	</div>	
+	<hr color="black">
+	<div class="Deaktivacija-Korisnik-svi-projekti">
+		<h3>Deaktivacija korisnika</h3>
+			<div class="Deaktivacija">
+			<p>Korisnik: <input name="deatkivacijaKorisnik1" id="deatkivacijaKorisnik1" list="deaktivacija" placeholder="Select Type"/></p>
+					<datalist id="deaktivacija">
+					</datalist>
+			</div>
+		<div class="DeaktivacijaProjekat13">
+			<button class="btn btn-danger" id="DeaktivacijaKlik" onClick="funkicjeAdmin.DeAktivacija_dialog()" >Deaktiviraj </button>
+		</div>
+	</div>
+	<hr color="black">
+	<div class="Aktivacija-Korisnik-svi-projekti">
+		<h3>Aktivacija korisnika</h3>
+			<div class="Aktivacija">
+			<p>Korisnik: <input name="AktivacijaKorisnik1" id="AktivacijaKorisnik1" list="atkivacija" placeholder="Select Type"/></p>
+					<datalist id="atkivacija">
+					</datalist>
+			</div>
+		<div class="AktivacijaProjekat13">
+			<button class="btn btn-danger" id="AktivacijaKlik" onClick="funkicjeAdmin.Aktivacija()" >Aktivacija</button>
+		</div>
+	</div>
+	<hr color="red">
+	
+		<div id="dialog-7" title="Dialog Title goes here...">Bravo</div>
+		<div id="dialog-11" title="Dialog Title goes here...">Greška!!!!</div>
+		<div id="dialog-pitanje" title="Dialog Title goes here...">Da li ste sigurni?</div>
+		
+	</div> 
+    <div class="head">
+			<ul class="ul2">
+				<li class="a4">TO-NET d.o.o  Sentandrejski put 44 Novi Sad
+				<br>tel: +381 21 479 41 44   fax: +381 21 479 41 45<br>
+				</li>
+			</ul>
+	</div>	
+</div>
+<div id="id5">
+ 	<div class="container registracijaHTML">
+	    <div class="row">
+			<h2 class="col-md-12 col-sm-4 col-xs-2" >Registracija Korisnika</h2>
+				<div class="col-md-12 col-sm-4 col-xs-2">
+					<table class="table table-bordered col-md-6 col-sm-4 col-xs-2">
+					<tr>
+						<th>Name:</th>
+						<th>Korisničko ime:</th>
+						<th>Prezime:</th>
+						<th>Email:</th>
+						<th>Sifra:</th>
+					</tr>
+					<tr>
+						<th><input class="col-xs-12" type="text" id="nameP"  name="fullname" ><br></th>
+						<th><input class="col-xs-12" type="text" id="nadimakP"  name="Nadimak"><br></th>
+						<th><input class="col-xs-12" type="text" id="prezimeP"  name="prezime"><br></th>
+						<th><input class="col-xs-12" type="text" id="emailP" name="email"></th>
+						<th><input class="col-xs-12" type="text" id="sifraP" name="sifra"></th>
+					</tr>
+					</table>
+						
+				</div>
+		</div>
+    </div>
+	<br>
+	<div class="container center">
+		<button class="col-md-12 col-sm-4 col-xs-2 btn btn-danger" onClick="funkicjeMicko.PrijavaNaServer()"> PrijavaNaServer  </button>
+		<div id="dialog-4" title="Dialog Title goes here...">Bravo</div>
+		<div id="dialog-5" title="Dialog Title goes here...">Pokusajte ponovo</div>
+	</div>
+ 	
+</div>
+<div id="id7">
+   
+          
+	<div class="DRopMeniPocetna1">	
+		<ul class="ulPocetnaSifra">
+			<li class="liPocetnaSifra" onClick="funkicjeAdmin.TONET()" ><img src="TO-NET.jpg"  width="300" height="80"></li>
+			<li class="li2" ><button id="dasds" class="Nazad btn btn-danger" onClick="funkicjeAdmin.NazadSifra()" >Nazad</button></li>
+		</ul>
+	</div>  
+	    
+		
+		<p>Micko</p>
+	<div class="Pomeraj">	
+		<p>Stara šifra: </p>
+		<input name="sifra" id="sifra" type="password" placeholder="Select Type"/>
+		<br>
+		<br>
+		<p>Nova šifra:  </p>
+		<input name="sifra1" id="sifra1" type="password" placeholder="Select Type"/>
+		<br>
+		<br>
+		<p>Potvrdi sifra:</p>
+		 <input name="sifra2" id="sifra2" type="password" placeholder="Select Type"/>
+		<!--<button class="btn btn-danger" onClick="funkicjeAdmin.NazadSifra()"> Nazad </button>-->
+	</div>
+	<div class="Pomeraj1">
+	<button id="promena-sifre-button" class="btn btn-danger" onClick="funkicjeMicko.Promena_sifre()"> Sačuvaj </button>
+	</div>
+	
+	 <div class="body" id="body2">
+		<p></p>
+	</div>
+	<div class="footer" id="footer2">
+		<ul class="ulSifra">
+				<li class="a5">TO-NET d.o.o  Sentandrejski put 44 Novi Sad
+				<br>tel: +381 21 479 41 44   fax: +381 21 479 41 45<br>
+				</li>
+		</ul>
+	</div>	
+</div>
+
+<div id="id8">
+    <div class="DRopMeniPocetna1">	
+		<ul class="ulPocetnaSifra1">
+			<li class="liPocetnaSifra" onClick="funkicjeAdmin.TONET()" ><img src="TO-NET.jpg"  width="300" height="80"></li>
+			<li class="li2" ><button id="dasds1" class="Nazad btn btn-danger" onClick="funkicjeMicko.NazadTabela()" >Nazad</button></li>
+		</ul>
+	</div> 
+	<p>Micko</p>
+	<div class="StranaTebela">
+		<p>Godina:</p>
+			<td><input placeholder="GodinaTabela" id="OdabranaGodinaTabela" type="number" min="2016" max="2018" step="1" size="12"></input>
+	</div>
+	<div class="Pozicija4">	
+		<div class="TabelaKorsnici">	
+			<body>
+				<div id="output">
+					<table width="100%" class="table table-bordered" border="1" id="presidents">
+					<!--<table width="100%" class="table table-bordered" border="1" id="presidents">-->
+						<tr>
+							<th>Projekat</th><th>Januar</th><th>Februar</th><th>Mart</th><th>April</th><th>Maj</th><th>Jun</th><th>Jul</th><th>Avgust</th><th id="sep">Septembar</th><th>Oktobar</th><th id="nov" >Novembar</th><th id="dec" >Decembar</th><th id="sum1">Sum</th>
+						</tr>
+					</table>
+				</div>
+			</body>
+				
+			<br>
+		</div>
+	</div>
+	
+	
+	
+	 <div class="body" id="body3">
+		<p></p>
+	</div>
+    <div class="footer" id="footer3">
+		<ul class="ulSifra1">
+				<li class="a10">TO-NET d.o.o  Sentandrejski put 44 Novi Sad
+				<br>tel: +381 21 479 41 44   fax: +381 21 479 41 45<br>
+				</li>
+		</ul>
+	</div>	
+
+</div>
+
+<script>
+
+		/*document.getElementById("BRISIKORisnika").disabled = true;
+		document.getElementById("BRISII").disabled = true;
+		document.getElementById("DodajProjekatID").disabled = true;*/
+
+
+</script>
+
+
+<script src="JsLista.js"> </script>
+<script src="JsIspisInformacija.js"> </script>
+<script src="JsAdmin.js"> </script>
+<!-- <script type="text/javascript" src="./pathjs/path.min.js"></script>
+<script type="text/javascript" src="./bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./projects.js"></script>
+<script type="text/javascript" src="./http.js"></script -->
+
+
+</body>
+</html>
